@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to Green Garden — your source for sustainable gardening tips and eco-friendly plant care." />
-  <meta name="keywords" content="gardening, sustainable, eco-friendly, plant care, green living" />
-  <meta name="author" content="Green Garden Team" />
-  <title>Green Garden | Sustainable Gardening Tips</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Charity Wambui - Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Charity Wambui, a web developer focused on semantic HTML, accessibility, and clean code.">
+  <meta name="keywords" content="Charity Wambui, Web Developer, HTML5, Accessibility, SEO, Portfolio">
+  <meta name="author" content="Charity Wambui">
 </head>
 <body>
+
+  <!-- Header -->
   <header role="banner">
-    <h1>Green Garden</h1>
-    <nav role="navigation" aria-label="Main navigation">
+    <h1>Charity Wambui</h1>
+    <p>Web Developer | HTML5 Enthusiast | Accessibility Advocate</p>
+    <nav aria-label="Main navigation">
       <ul>
-        <li><a href="#tips">Gardening Tips</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" title="Go to About section">About</a></li>
+        <li><a href="#projects" title="Go to Projects section">Projects</a></li>
+        <li><a href="#contact" title="Go to Contact section">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main role="main">
-    <section id="hero" aria-labelledby="hero-title">
-      <h2 id="hero-title">Grow Greener, Live Better</h2>
-      <p>Discover sustainable gardening practices that help you grow beautiful plants while protecting the environment.</p>
+
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>Hello! I'm Charity Wambui, a passionate web developer with a focus on writing clean, accessible, and semantic HTML5. I enjoy building user-friendly websites and promoting inclusive web design practices.</p>
     </section>
 
-    <section id="tips" aria-labelledby="tips-title">
-      <h2 id="tips-title">Gardening Tips</h2>
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
 
-      <article aria-labelledby="tip1-title">
-        <h3 id="tip1-title">Use Compost to Enrich Soil</h3>
-        <p>Composting not only reduces waste but also provides rich nutrients for your garden.</p>
+      <article aria-labelledby="project1-heading">
+        <h3 id="project1-heading">Accessible Blog Template</h3>
+        <p>A clean HTML5 blog layout that uses semantic elements and ARIA roles to support screen readers and navigation tools.</p>
       </article>
 
-      <article aria-labelledby="tip2-title">
-        <h3 id="tip2-title">Choose Native Plants</h3>
-        <p>Native plants require less water and are more resistant to local pests and diseases.</p>
+      <article aria-labelledby="project2-heading">
+        <h3 id="project2-heading">HTML-Only Portfolio</h3>
+        <p>This current portfolio site, built entirely with HTML, demonstrates accessibility features, SEO meta tags, and proper structure.</p>
       </article>
 
-      <article aria-labelledby="tip3-title">
-        <h3 id="tip3-title">Water Early or Late</h3>
-        <p>Watering in the morning or evening reduces evaporation and helps plants absorb moisture more effectively.</p>
+      <article aria-labelledby="project3-heading">
+        <h3 id="project3-heading">Contact Form Demo</h3>
+        <p>A fully accessible form using native HTML elements, labels, and ARIA attributes — no CSS or JavaScript involved.</p>
       </article>
     </section>
 
-    <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title">About Us</h2>
-      <p>Green Garden is a team of eco-conscious gardeners sharing knowledge to promote a greener planet, one garden at a time.</p>
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form action="#" method="post" aria-label="Contact form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required aria-required="true"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required aria-required="true"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact Us</h2>
-      <p>Have questions or tips to share? <a href="mailto:contact@greengarden.com">Email us</a> or follow us on social media.</p>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer role="contentinfo">
-    <p>&copy; 2025 Green Garden. All rights reserved.</p>
-    <p><a href="#top">Back to top</a></p>
+    <p>&copy; 2025 Charity Wambui. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+
      
+
 
